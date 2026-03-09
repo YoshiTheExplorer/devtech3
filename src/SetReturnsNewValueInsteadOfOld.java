@@ -5,7 +5,7 @@ public class SetReturnsNewValueInsteadOfOld<E> extends DoublyLinkedList<E> {
     @Override
     public E set(int index, E element) {
         super.set(index, element);
-        // Wrong contract: should return old value.
+        // should return old value but instead returns new value.
         return element;
     }
 }
