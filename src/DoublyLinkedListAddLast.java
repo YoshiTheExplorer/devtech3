@@ -27,7 +27,7 @@
 
 import java.util.*;
 
-public class DoublyLinkedList<E> {
+public class DoublyLinkedListAddLast<E> {
     protected int size = 0;
 
     /**
@@ -43,15 +43,15 @@ public class DoublyLinkedList<E> {
     /**
      * Constructs an empty list.
      */
-    public DoublyLinkedList() {
+    public DoublyLinkedListAddLast() {
     }
 
     /**
      * Links e as first element.
      */
     protected void linkFirst(E e) {
-        final DoublyLinkedList.Node<E> f = first;
-        final DoublyLinkedList.Node<E> newNode = new DoublyLinkedList.Node<>(null, e, f);
+        final DoublyLinkedListAddLast.Node<E> f = first;
+        final DoublyLinkedListAddLast.Node<E> newNode = new DoublyLinkedListAddLast.Node<>(null, e, f);
         first = newNode;
         if (f == null)
             last = newNode;
@@ -135,7 +135,7 @@ public class DoublyLinkedList<E> {
      * @since 1.5
      */
     public E removeFirst() {
-        final DoublyLinkedList.Node<E> f = first;
+        final DoublyLinkedListAddLast.Node<E> f = first;
         if (f == null)
             throw new NoSuchElementException();
         return unlink(first);
@@ -148,7 +148,7 @@ public class DoublyLinkedList<E> {
      * @throws NoSuchElementException if this list is empty
      */
     public E removeLast() {
-        final DoublyLinkedList.Node<E> l = last;
+        final DoublyLinkedListAddLast.Node<E> l = last;
         if (l == null)
             throw new NoSuchElementException();
         return unlink(last);
