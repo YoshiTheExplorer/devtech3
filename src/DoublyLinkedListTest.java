@@ -9,7 +9,7 @@ public class DoublyLinkedListTest {
      * Use this to toggle between using the DoublyLinkedList class and your broken classes
      * You may submit with either true or false.
      */
-    boolean SHOULD_FAIL = true;
+    boolean SHOULD_FAIL = false;
 
     private DoublyLinkedList<Integer> list;
 
@@ -89,7 +89,7 @@ public class DoublyLinkedListTest {
     // Tests for isEmpty
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see IsEmptyAlwaysFalse
      */
     @Test
@@ -159,7 +159,7 @@ public class DoublyLinkedListTest {
     // Tests for remove
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see RemoveAtIndexAlwaysRemovesLast
      */
     @Test
@@ -179,7 +179,7 @@ public class DoublyLinkedListTest {
     // Tests for removeFirst
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see RemoveFirstReturnsButDoesNotRemove
      */
     @Test
@@ -197,7 +197,7 @@ public class DoublyLinkedListTest {
     // Tests for removeLast
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see RemoveLastReturnsButDoesNotRemove
      */
     @Test
@@ -215,7 +215,7 @@ public class DoublyLinkedListTest {
     // Tests for size
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see SizeAlwaysZero
      */
     @Test
@@ -233,7 +233,7 @@ public class DoublyLinkedListTest {
     // Tests for set
 
     /**
-     * @author Sam Gunshor
+     * @author Colin Yamada
      * @see SetReturnsNewValueInsteadOfOld
      */
     @Test
