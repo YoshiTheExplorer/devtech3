@@ -110,12 +110,14 @@ public class DoublyLinkedListTest {
         if (SHOULD_FAIL) list = new AddIntBroken<>();
 
         list.addLast(1);
-        list.addLast(3);
-        list.add(1, 2);
+        list.addLast(2);
+        list.addLast(4);
+        list.add(1, 3);
 
         assertEquals(1, list.get(0));
-        assertEquals(2, list.get(1));
-        assertEquals(3, list.get(2));
+        assertEquals(3, list.get(1));
+        assertEquals(2, list.get(2));
+        assertEquals(4, list.get(3));
     }
 
     // Tests for addFirst
